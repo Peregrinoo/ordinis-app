@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:ordinis/providers/daily_quote_provider.dart';
@@ -25,21 +26,13 @@ class _QuotesScreenState extends State<QuotesScreen> {
 
     if (provider.isLoading) {
       return const Scaffold(
-        body: Center(
-          child: CircularProgressIndicator(),
-        ),
+        body: Center(child: CircularProgressIndicator()),
       );
-    }
-
-    for(int i = 0; i < provider.allQuotes.length; i++) {
-      print('[DEBUG_LOG] Quote ${i + 1}: ${provider.allQuotes[i].backgroundImage}');
     }
 
     if (provider.allQuotes.isEmpty) {
       return const Scaffold(
-        body: Center(
-          child: Text('Nenhuma citação encontrada.'),
-        ),
+        body: Center(child: Text('Nenhuma citação encontrada.')),
       );
     }
 
@@ -50,14 +43,9 @@ class _QuotesScreenState extends State<QuotesScreen> {
         children: [
           AnimatedSwitcher(
             duration: const Duration(milliseconds: 500),
-            child: Container(
+            child: _BackgroundImage(
               key: ValueKey(currentQuote.backgroundImage),
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage(currentQuote.backgroundImage),
-                  fit: BoxFit.cover,
-                ),
-              ),
+              imageUrl: currentQuote.backgroundImage,
             ),
           ),
 
@@ -69,7 +57,6 @@ class _QuotesScreenState extends State<QuotesScreen> {
             child: Column(
               children: [
                 const SizedBox(height: 12),
-
                 Expanded(
                   child: PageView.builder(
                     controller: _pageController,
@@ -152,7 +139,6 @@ class _QuotesScreenState extends State<QuotesScreen> {
                     },
                   ),
                 ),
-
                 Padding(
                   padding: const EdgeInsets.only(bottom: 24),
                   child: Row(
@@ -178,6 +164,41 @@ class _QuotesScreenState extends State<QuotesScreen> {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+class _BackgroundImage extends StatelessWidget {
+  final String imageUrl;
+
+  const _BackgroundImage({
+    super.key,
+    required this.imageUrl,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox.expand(
+      child: CachedNetworkImage(
+        imageUrl: imageUrl,
+        fit: BoxFit.cover,
+        placeholder: (context, url) => Container(
+          color: const Color(0xFF2A211B),
+          child: const Center(
+            child: CircularProgressIndicator(color: Colors.white),
+          ),
+        ),
+        errorWidget: (context, url, error) => Container(
+          color: const Color(0xFF2A211B),
+          child: const Center(
+            child: Icon(
+              Icons.broken_image_outlined,
+              color: Colors.white,
+              size: 42,
+            ),
+          ),
+        ),
       ),
     );
   }
