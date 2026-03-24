@@ -55,12 +55,11 @@ class _SplashPageState extends State<SplashPage> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const Icon(
-                    Icons.auto_stories_rounded,
-                    size: 150,
-                    color: _logoColor,
+                  Image.asset(
+                    'assets/logo.png',
+                    width: 190,
                   ),
-                  const SizedBox(height: 28),
+                  SizedBox(height: 28),
                   Text(
                     'ORDINIS',
                     textAlign: TextAlign.center,
@@ -85,14 +84,6 @@ class _SplashPageState extends State<SplashPage> {
                     ),
                   ),
                   const SizedBox(height: 40),
-                  const SizedBox(
-                    width: 26,
-                    height: 26,
-                    child: CircularProgressIndicator(
-                      strokeWidth: 2.2,
-                      valueColor: AlwaysStoppedAnimation<Color>(_logoColor),
-                    ),
-                  ),
                 ],
               ),
             ),
