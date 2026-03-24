@@ -4,12 +4,15 @@ class QuoteModel {
   final String trecho;
   final String livro;
   final String explicacao;
+  final String backgroundImage;
 
-   //Construtor da classe
+
+  //Construtor da classe
    QuoteModel({
      required this.trecho,
      required this.livro,
      required this.explicacao,
+     required this.backgroundImage
    });
 
   factory QuoteModel.fromMap(Map<String, dynamic> map) {
@@ -17,6 +20,7 @@ class QuoteModel {
       trecho: map['trecho'] ?? '',
       livro: map['livro'] ?? '',
       explicacao: map['explicacao'] ?? '',
+      backgroundImage: map['backgroundImage'] ?? ''
     );
   }
 }
