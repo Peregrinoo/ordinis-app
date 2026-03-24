@@ -1,5 +1,4 @@
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ordinis/data/models/quote_model.dart';
@@ -8,14 +7,11 @@ import 'package:ordinis/widgets/quotes/action_buttons.dart';
 class QuoteCard extends StatelessWidget {
   final QuoteModel quote;
   final VoidCallback onShare;
-  final VoidCallback onFavorite;
-  final bool isFavorite;
 
   const QuoteCard({
+    super.key,
     required this.quote,
     required this.onShare,
-    required this.onFavorite,
-    this.isFavorite = false,
   });
 
   @override
@@ -71,7 +67,7 @@ class QuoteCard extends StatelessWidget {
               ),
               const SizedBox(height: 10),
               Text(
-                quote.livro,
+                '${quote.reference}    ${quote.author}',
                 style: GoogleFonts.inter(
                   fontSize: 14,
                   fontWeight: FontWeight.w500,
@@ -81,18 +77,22 @@ class QuoteCard extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 14),
+              Text(
+                quote.explicacao,
+                style: GoogleFonts.inter(
+                  fontSize: 15,
+                  height: 1.45,
+                  fontWeight: FontWeight.w400,
+                  color: textSecondary.withOpacity(0.96),
+                ),
+              ),
+              const SizedBox(height: 14),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   ActionCircleButton(
                     icon: Icons.share_outlined,
                     onTap: onShare,
-                  ),
-                  const SizedBox(width: 10),
-                  ActionCircleButton(
-                    icon: isFavorite ? Icons.favorite : Icons.favorite_border,
-                    onTap: onFavorite,
-                    isActive: isFavorite,
                   ),
                 ],
               ),

@@ -10,16 +10,11 @@ class QuoteModel {
   final String confidenceLevel;
   final String sourceUrl;
   final String suggestedDisplayText;
+  final String reflection;
+  final String imageUrl;
   final List<String> tags;
 
-  // Propriedades para compatibilidade com a UI existente
-  final String trecho;
-  final String livro;
-  final String explicacao;
-  final String backgroundImage;
-
-  // Construtor da classe
-  QuoteModel({
+  const QuoteModel({
     required this.id,
     required this.quoteText,
     required this.quoteTextOriginal,
@@ -30,76 +25,118 @@ class QuoteModel {
     required this.confidenceLevel,
     required this.sourceUrl,
     required this.suggestedDisplayText,
+    required this.reflection,
+    required this.imageUrl,
     required this.tags,
-    required this.trecho,
-    required this.livro,
-    required this.explicacao,
-    required this.backgroundImage,
   });
 
-  factory QuoteModel.fromMap(Map<String, dynamic> map) {
-    // Extrair dados do JSON
-    final id = map['id'] ?? '';
-    final quoteText = map['quote_text'] ?? '';
-    final quoteTextOriginal = map['quote_text_original'] ?? '';
-    final author = map['author'] ?? '';
-    final workTitle = map['work_title'] ?? '';
-    final reference = map['reference'] ?? '';
-    final translationNote = map['translation_note'] ?? '';
-    final confidenceLevel = map['confidence_level'] ?? '';
-    final sourceUrl = map['source_url'] ?? '';
-    final suggestedDisplayText = map['suggested_display_text'] ?? '';
-    final imageURL = map["image_url"] ?? '';
-    final tags = List<String>.from(map['tags'] ?? []);
+  // Getters para compatibilidade com a UI atual
+  String get trecho => quoteText;
 
-    // Mapear para propriedades da UI existente
-    final trecho = quoteText;
-    final livro = workTitle.isNotEmpty && author.isNotEmpty 
-        ? '$workTitle - $author' 
-        : (author.isNotEmpty ? author : workTitle);
-    final explicacao = translationNote.isNotEmpty 
-        ? translationNote 
-        : (reference.isNotEmpty ? 'Referência: $reference' : '');
-    final backgroundImage = imageURL;
+  String get livro {
+    final parts = <String>[
+      if (reference.trim().isNotEmpty) reference.trim(),
+      if (author.trim().isNotEmpty) author.trim(),
+    ];
+    return parts.join('    ');
+  }
+
+  String get explicacao {
+    if (reflection.trim().isNotEmpty) return reflection.trim();
+    if (translationNote.trim().isNotEmpty) return translationNote.trim();
+    return '';
+  }
+
+  String get backgroundImage => imageUrl;
+
+  factory QuoteModel.fromMap(Map<String, dynamic> map) {
+    String readString(String key, [String fallback = '']) {
+      final value = map[key];
+      if (value == null) return fallback;
+      return value.toString().trim();
+    }
+
+    List<String> readStringList(String key) {
+      final value = map[key];
+      if (value is List) {
+        return value.map((e) => e.toString()).toList();
+      }
+      return <String>[];
+    }
 
     return QuoteModel(
-      id: id,
-      quoteText: quoteText,
-      quoteTextOriginal: quoteTextOriginal,
-      author: author,
-      workTitle: workTitle,
-      reference: reference,
-      translationNote: translationNote,
-      confidenceLevel: confidenceLevel,
-      sourceUrl: sourceUrl,
-      suggestedDisplayText: suggestedDisplayText,
-      tags: tags,
-      trecho: trecho,
-      livro: livro,
-      explicacao: explicacao,
-      backgroundImage: backgroundImage,
+      id: readString('id'),
+      quoteText: readString('quote_text'),
+      quoteTextOriginal: readString('quote_text_original'),
+      author: readString('author'),
+      workTitle: readString('work_title'),
+      reference: readString('reference'),
+      translationNote: readString('translation_note'),
+      confidenceLevel: readString('confidence_level'),
+      sourceUrl: readString('source_url'),
+      suggestedDisplayText: readString('suggested_display_text'),
+      reflection: readString(
+        'reflection',
+        readString('explicacao'),
+      ),
+      imageUrl: readString(
+        'image_url',
+        readString(
+          'background_image',
+          readString('display_url'),
+        ),
+      ),
+      tags: readStringList('tags'),
     );
   }
 
+  Map<String, dynamic> toMap() {
+    return {
+      'id': id,
+      'quote_text': quoteText,
+      'quote_text_original': quoteTextOriginal,
+      'author': author,
+      'work_title': workTitle,
+      'reference': reference,
+      'translation_note': translationNote,
+      'confidence_level': confidenceLevel,
+      'source_url': sourceUrl,
+      'suggested_display_text': suggestedDisplayText,
+      'reflection': reflection,
+      'image_url': imageUrl,
+      'tags': tags,
+    };
+  }
+
   QuoteModel copyWith({
-    String? backgroundImage,
+    String? id,
+    String? quoteText,
+    String? quoteTextOriginal,
+    String? author,
+    String? workTitle,
+    String? reference,
+    String? translationNote,
+    String? confidenceLevel,
+    String? sourceUrl,
+    String? suggestedDisplayText,
+    String? reflection,
+    String? imageUrl,
+    List<String>? tags,
   }) {
     return QuoteModel(
-      id: id,
-      quoteText: quoteText,
-      quoteTextOriginal: quoteTextOriginal,
-      author: author,
-      workTitle: workTitle,
-      reference: reference,
-      translationNote: translationNote,
-      confidenceLevel: confidenceLevel,
-      sourceUrl: sourceUrl,
-      suggestedDisplayText: suggestedDisplayText,
-      tags: tags,
-      trecho: trecho,
-      livro: livro,
-      explicacao: explicacao,
-      backgroundImage: backgroundImage ?? this.backgroundImage,
+      id: id ?? this.id,
+      quoteText: quoteText ?? this.quoteText,
+      quoteTextOriginal: quoteTextOriginal ?? this.quoteTextOriginal,
+      author: author ?? this.author,
+      workTitle: workTitle ?? this.workTitle,
+      reference: reference ?? this.reference,
+      translationNote: translationNote ?? this.translationNote,
+      confidenceLevel: confidenceLevel ?? this.confidenceLevel,
+      sourceUrl: sourceUrl ?? this.sourceUrl,
+      suggestedDisplayText: suggestedDisplayText ?? this.suggestedDisplayText,
+      reflection: reflection ?? this.reflection,
+      imageUrl: imageUrl ?? this.imageUrl,
+      tags: tags ?? this.tags,
     );
   }
 }

@@ -15,13 +15,9 @@
       "confidence_level": "alta",
       "source_url": "https://www.thelatinlibrary.com/augustine/conf1.shtml",
       "suggested_display_text": "Inquieto está o nosso coração…",
-      "tags": [
-        "busca",
-        "Deus",
-        "inquietacao",
-        "oracao",
-        "interioridade"
-      ]
+      "reflection": "O ser humano carrega uma sede profunda de sentido. Agostinho lembra que nenhum prazer, conquista ou distração consegue aquietar plenamente o coração quando ele ainda não encontrou descanso em Deus.",
+      "image_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Preparatory%20Sketch%20for%20Carpaccio%27s%20St.%20Augustine%20in%20His%20Study.jpg&width=1440",
+      "tags": ["busca", "Deus", "inquietacao", "oracao", "interioridade"]
     },
     {
       "id": "q002",
@@ -34,12 +30,9 @@
       "confidence_level": "alta",
       "source_url": "https://www.thelatinlibrary.com/augustine/conf3.shtml",
       "suggested_display_text": "Amava o próprio amar.",
-      "tags": [
-        "amor",
-        "desejo",
-        "conversao",
-        "juventude"
-      ]
+      "reflection": "Nem todo desejo de amar já é amor verdadeiro. Às vezes a pessoa ama a ideia do amor, a emoção ou a falta que ele preenche, antes de aprender a amar com verdade, entrega e maturidade.",
+      "image_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Vittore%20Carpaccio%20026.jpg&width=1440",
+      "tags": ["amor", "desejo", "conversao", "juventude"]
     },
     {
       "id": "q003",
@@ -52,12 +45,9 @@
       "confidence_level": "alta",
       "source_url": "https://www.thelatinlibrary.com/augustine/conf3.shtml",
       "suggested_display_text": "Mais íntimo que o meu íntimo…",
-      "tags": [
-        "Deus",
-        "interioridade",
-        "transcendencia",
-        "contemplacao"
-      ]
+      "reflection": "Deus não está distante como uma ideia abstrata. Ele é mais profundo do que nossas próprias camadas interiores e, ao mesmo tempo, infinitamente acima de tudo o que conseguimos imaginar.",
+      "image_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Sandro%20Botticelli%20-%20St%20Augustin%20dans%20son%20cabinet%20de%20travail.jpg&width=1440",
+      "tags": ["Deus", "interioridade", "transcendencia", "contemplacao"]
     },
     {
       "id": "q004",
@@ -70,12 +60,9 @@
       "confidence_level": "alta",
       "source_url": "https://www.thelatinlibrary.com/augustine/conf8.shtml",
       "suggested_display_text": "Mas não agora.",
-      "tags": [
-        "virtude",
-        "fraqueza",
-        "autodominio",
-        "conversao"
-      ]
+      "reflection": "A frase revela o coração dividido: saber o que é bom, mas ainda resistir à mudança. Ela fala sobre a luta interior entre o desejo de conversão e o apego às próprias fraquezas.",
+      "image_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Sandro%20Botticelli%20-%20Saint%20Augustin.jpg&width=1440",
+      "tags": ["virtude", "fraqueza", "autodominio", "conversao"]
     },
     {
       "id": "q005",
@@ -88,12 +75,9 @@
       "confidence_level": "alta",
       "source_url": "https://www.thelatinlibrary.com/augustine/conf8.shtml",
       "suggested_display_text": "Toma e lê.",
-      "tags": [
-        "escritura",
-        "chamado",
-        "conversao",
-        "discernimento"
-      ]
+      "reflection": "Deus muitas vezes chama por meios simples e inesperados. Essa frase aponta para a importância da escuta e da obediência ao instante em que a graça toca a consciência.",
+      "image_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Champaigne%2C%20Philippe%20de%20-%20Saint%20Augustin%20-%201645-1650.jpg&width=1440",
+      "tags": ["escritura", "chamado", "conversao", "discernimento"]
     },
     {
       "id": "q006",
@@ -106,12 +90,9 @@
       "confidence_level": "alta",
       "source_url": "https://www.thelatinlibrary.com/augustine/conf10.shtml",
       "suggested_display_text": "Tarde te amei…",
-      "tags": [
-        "amor",
-        "conversao",
-        "beleza",
-        "arrependimento"
-      ]
+      "reflection": "É o reconhecimento doloroso e belo de quem percebe que buscou fora aquilo que sempre esteve diante dele. Fala de arrependimento, mas também de reencontro com a verdadeira beleza.",
+      "image_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Navolger%20van%20Rogier%20van%20der%20Weyden%20-%20St%20Augustine%20Sacrificing%20to%20a%20Manichaean%20Idol%20%28%5E%29%20-%20SK-A-2057%20-%20Mauritshuis.jpg&width=1440",
+      "tags": ["amor", "conversao", "beleza", "arrependimento"]
     },
     {
       "id": "q007",
@@ -124,12 +105,9 @@
       "confidence_level": "alta",
       "source_url": "https://www.thelatinlibrary.com/augustine/conf10.shtml",
       "suggested_display_text": "Tornei-me um enigma…",
-      "tags": [
-        "autoconhecimento",
-        "humildade",
-        "oracao",
-        "verdade"
-      ]
+      "reflection": "Conhecer a si mesmo pode ser doloroso. Agostinho mostra que a verdade interior nem sempre consola; às vezes ela expõe feridas, contradições e fragilidades que preferíamos ignorar.",
+      "image_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Scenes%20from%20the%20Life%20of%20Saint%20Augustine%20of%20Hippo%20MET%20DT200613.jpg&width=1440",
+      "tags": ["autoconhecimento", "humildade", "oracao", "verdade"]
     },
     {
       "id": "q008",
@@ -142,12 +120,9 @@
       "confidence_level": "alta",
       "source_url": "https://www.latin.it/autore/sant-agostino/confessiones/liber-x/?lang=it",
       "suggested_display_text": "Dá o que ordenas…",
-      "tags": [
-        "graca",
-        "vontade",
-        "oracao",
-        "dependencia_de_Deus"
-      ]
+      "reflection": "Cumprir a vontade de Deus não depende só do esforço humano. A frase reconhece que a graça é necessária: Deus não apenas pede, mas também sustenta e capacita.",
+      "image_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Cathedral%20Basilica%20of%20St.%20Augustine%20%28St.%20Augustine%2C%20Florida%29%20-%20stained%20glass%2C%20Baptism%20of%20St.%20Augustine%20by%20St.%20Ambrose.jpg&width=1440",
+      "tags": ["graca", "vontade", "oracao", "dependencia_de_Deus"]
     },
     {
       "id": "q009",
@@ -160,12 +135,9 @@
       "confidence_level": "alta",
       "source_url": "https://www.thelatinlibrary.com/augustine/conf13.shtml",
       "suggested_display_text": "Meu peso é meu amor.",
-      "tags": [
-        "amor",
-        "desejo",
-        "ordem",
-        "vida_espiritual"
-      ]
+      "reflection": "O que mais amamos orienta nossos passos. Essa frase mostra que os afetos não são neutros: eles direcionam a vida, moldam escolhas e revelam para onde o coração está sendo levado.",
+      "image_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Cathedral%20Basilica%20of%20St.%20Augustine%20%28St.%20Augustine%2C%20Florida%29%20-%20stained%20glass%2C%20Ordination%20of%20St.%20Augustine.jpg&width=1440",
+      "tags": ["amor", "desejo", "ordem", "vida_espiritual"]
     },
     {
       "id": "q010",
@@ -178,12 +150,9 @@
       "confidence_level": "alta",
       "source_url": "https://www.thelatinlibrary.com/augustine/civ4.shtml",
       "suggested_display_text": "Reinos sem justiça…",
-      "tags": [
-        "justica",
-        "politica",
-        "etica",
-        "sociedade"
-      ]
+      "reflection": "Poder sem justiça vira violência legitimada. Agostinho desmonta a aparência de grandeza política quando ela não está fundada na verdade, no direito e no bem comum.",
+      "image_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Cathedral%20Basilica%20of%20St.%20Augustine%20%28St.%20Augustine%2C%20Florida%29%20-%20stained%20glass%2C%20St.%20Augustine%20Reading%20the%20Rules%20of%20His%20Order.jpg&width=1440",
+      "tags": ["justica", "politica", "etica", "sociedade"]
     },
     {
       "id": "q011",
@@ -196,12 +165,9 @@
       "confidence_level": "alta",
       "source_url": "https://www.thelatinlibrary.com/augustine/civ11.shtml",
       "suggested_display_text": "Se me engano, existo.",
-      "tags": [
-        "verdade",
-        "filosofia",
-        "consciencia",
-        "certeza"
-      ]
+      "reflection": "Até a dúvida confirma a existência de quem duvida. É uma frase poderosa sobre consciência e verdade interior: mesmo na incerteza, existe um ponto firme a partir do qual o ser humano pensa e se reconhece.",
+      "image_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Cathedral%20Basilica%20of%20St.%20Augustine%20%28St.%20Augustine%2C%20Florida%29%20-%20stained%20glass%2C%20St.%20Augustine%20Preaching.jpg&width=1440",
+      "tags": ["verdade", "filosofia", "consciencia", "certeza"]
     },
     {
       "id": "q012",
@@ -214,12 +180,9 @@
       "confidence_level": "alta",
       "source_url": "https://www.thelatinlibrary.com/augustine/civ14.shtml",
       "suggested_display_text": "Dois amores, duas cidades.",
-      "tags": [
-        "amor",
-        "orgulho",
-        "humildade",
-        "cidade_de_Deus"
-      ]
+      "reflection": "A vida humana se organiza a partir do amor que a governa. Quando o centro é o ego, tudo se corrompe; quando o centro é Deus, nasce uma ordem nova, marcada por humildade e comunhão.",
+      "image_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Cathedral%20Basilica%20of%20St.%20Augustine%20%28St.%20Augustine%2C%20Florida%29%20-%20stained%20glass%2C%20St.%20Augustine%20Healing%20a%20Sick%20Man.jpg&width=1440",
+      "tags": ["amor", "orgulho", "humildade", "cidade_de_Deus"]
     },
     {
       "id": "q013",
@@ -232,12 +195,9 @@
       "confidence_level": "alta",
       "source_url": "https://www.thelatinlibrary.com/augustine/civ19.shtml",
       "suggested_display_text": "Tranquilidade da ordem.",
-      "tags": [
-        "paz",
-        "ordem",
-        "sociedade",
-        "bem_comum"
-      ]
+      "reflection": "Paz não é apenas ausência de conflito, mas harmonia interior e exterior quando cada realidade encontra seu lugar. A verdadeira tranquilidade nasce de uma ordem justa e bem orientada.",
+      "image_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Cathedral%20Basilica%20of%20St.%20Augustine%20%28St.%20Augustine%2C%20Florida%29%20-%20stained%20glass%2C%20St.%20Augustine%20with%20St.%20Monica.jpg&width=1440",
+      "tags": ["paz", "ordem", "sociedade", "bem_comum"]
     },
     {
       "id": "q014",
@@ -250,12 +210,9 @@
       "confidence_level": "alta",
       "source_url": "https://www.augustinus.it/latino/vera_religione/vera_religione_39.htm",
       "suggested_display_text": "No homem interior…",
-      "tags": [
-        "verdade",
-        "interioridade",
-        "contemplacao",
-        "sabedoria"
-      ]
+      "reflection": "Agostinho convida a uma volta para dentro, não como fuga do mundo, mas como caminho para encontrar a verdade que ilumina a vida. A interioridade é lugar de encontro, exame e escuta.",
+      "image_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Cathedral%20Basilica%20of%20St.%20Augustine%20%28St.%20Augustine%2C%20Florida%29%20-%20stained%20glass%2C%20St.%20Augustine%20%26%20St.%20Alipius%20in%20the%20Garden.jpg&width=1440",
+      "tags": ["verdade", "interioridade", "contemplacao", "sabedoria"]
     },
     {
       "id": "q015",
@@ -268,12 +225,9 @@
       "confidence_level": "alta",
       "source_url": "https://www.augustinus.it/latino/commento_epistola_giovanni/omelia_07_testo.htm",
       "suggested_display_text": "Ama e faze…",
-      "tags": [
-        "amor",
-        "caridade",
-        "etica",
-        "liberdade"
-      ]
+      "reflection": "Quando o amor verdadeiro orienta o coração, as ações tendem a encontrar seu eixo. Não é licença para qualquer coisa, mas chamado para agir a partir da caridade e da responsabilidade.",
+      "image_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Cathedral%20Basilica%20of%20St.%20Augustine%20%28St.%20Augustine%2C%20Florida%29%20-%20stained%20glass%2C%20St.%20Augustine%20at%20the%20Seashore%20Talking%20to%20a%20Child.jpg&width=1440",
+      "tags": ["amor", "caridade", "etica", "liberdade"]
     },
     {
       "id": "q016",
@@ -286,12 +240,9 @@
       "confidence_level": "alta",
       "source_url": "https://www.augustinus.it/latino/discorsi/discorso_043_testo.htm",
       "suggested_display_text": "Fé é crer…",
-      "tags": [
-        "fe",
-        "esperanca",
-        "visao",
-        "confianca"
-      ]
+      "reflection": "A fé não é cegueira irracional, mas confiança perseverante diante do que ainda não se revelou plenamente. Ela caminha antes da visão, sustentando a esperança até a experiência mais clara da verdade.",
+      "image_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/St.%20Augustine%20Florida%20Visit%202016%20-%20Church%20Stained%20Glass%20Window.jpg&width=1440",
+      "tags": ["fe", "esperanca", "visao", "confianca"]
     },
     {
       "id": "q017",
@@ -304,12 +255,9 @@
       "confidence_level": "alta",
       "source_url": "https://www.augustinus.it/latino/discorsi/discorso_169_testo.htm",
       "suggested_display_text": "Não te justifica sem ti.",
-      "tags": [
-        "graca",
-        "liberdade",
-        "salvacao",
-        "responsabilidade"
-      ]
+      "reflection": "A graça de Deus não anula a liberdade humana. Ele toma a iniciativa, mas convida a pessoa a responder, acolher e cooperar com a transformação que está sendo oferecida.",
+      "image_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Fra%20Angelico%20-%20Annunciation.jpg&width=1440",
+      "tags": ["graca", "liberdade", "salvacao", "responsabilidade"]
     },
     {
       "id": "q018",
@@ -322,12 +270,9 @@
       "confidence_level": "alta",
       "source_url": "https://www.augustinus.it/latino/discorsi/discorso_272_testo.htm",
       "suggested_display_text": "Sede o que vedes…",
-      "tags": [
-        "eucaristia",
-        "igreja",
-        "comunhao",
-        "identidade"
-      ]
+      "reflection": "A frase aponta para a união entre celebração e vida. Participar da fé não é só receber um sinal sagrado, mas tornar-se na prática aquilo que se contempla e professa.",
+      "image_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/The%20Last%20Supper%20-%20Leonardo%20Da%20Vinci%20-%20High%20Resolution%2032x16.jpg&width=1440",
+      "tags": ["eucaristia", "igreja", "comunhao", "identidade"]
     },
     {
       "id": "q019",
@@ -340,12 +285,9 @@
       "confidence_level": "alta",
       "source_url": "https://www.augustinus.it/latino/discorsi/discorso_336_testo.htm",
       "suggested_display_text": "Cantar é de quem ama.",
-      "tags": [
-        "louvor",
-        "amor",
-        "oracao",
-        "alegria"
-      ]
+      "reflection": "O louvor nasce do afeto. Quem ama transborda; por isso o canto aparece como expressão de alegria, entrega e comunhão interior com aquilo que se ama.",
+      "image_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Caravaggio%20%E2%80%94%20Supper%20at%20Emmaus.jpg&width=1440",
+      "tags": ["louvor", "amor", "oracao", "alegria"]
     },
     {
       "id": "q020",
@@ -358,12 +300,9 @@
       "confidence_level": "alta",
       "source_url": "https://la.wikisource.org/wiki/Contra_epistolam_Parmeniani/III",
       "suggested_display_text": "O mundo julga com segurança…",
-      "tags": [
-        "unidade",
-        "igreja",
-        "cisma",
-        "comunhao"
-      ]
+      "reflection": "Agostinho enfatiza o valor da unidade e da comunhão. A verdade da fé não floresce no isolamento orgulhoso, mas na ligação com o corpo inteiro da Igreja.",
+      "image_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Rembrandt%20Harmensz.%20van%20Rijn%20-%20The%20Return%20of%20the%20Prodigal%20Son.jpg&width=1440",
+      "tags": ["unidade", "igreja", "cisma", "comunhao"]
     }
   ],
   "images": [

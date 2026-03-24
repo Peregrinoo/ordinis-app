@@ -1,40 +1,53 @@
 import 'dart:convert';
-import 'dart:math';
 import 'package:flutter/services.dart';
 import 'package:ordinis/data/models/quote_model.dart';
 
 class QuoteService {
-  final Random _random = Random();
-
   Future<List<QuoteModel>> loadQuotes() async {
-    final String jsonString =
-    await rootBundle.loadString('assets/dataset.json');
+    final String jsonString = await rootBundle.loadString('assets/dataset.json');
+    final Map<String, dynamic> jsonMap = jsonDecode(jsonString) as Map<String, dynamic>;
 
-    final Map<String, dynamic> jsonMap = jsonDecode(jsonString);
+    final List<dynamic> quotesList = (jsonMap['quotes'] as List<dynamic>? ?? []);
+    final List<dynamic> imagesList = (jsonMap['images'] as List<dynamic>? ?? []);
 
-    final List<dynamic> quotesList = jsonMap['quotes'] as List<dynamic>;
-    final List<dynamic> imagesList = jsonMap['images'] as List<dynamic>;
-
-    // 🔥 Extrai só as URLs
     final List<String> imageUrls = imagesList
-        .map((img) => img['display_url'] as String)
+        .map((item) => _extractImageUrl(item))
+        .where((url) => url.isNotEmpty)
         .toList();
 
-    // 🔥 Monta as quotes já com imagem
-    return quotesList.map((item) {
-      final quote =
-      QuoteModel.fromMap(item as Map<String, dynamic>);
+    return List<QuoteModel>.generate(quotesList.length, (index) {
+      final quoteMap = Map<String, dynamic>.from(quotesList[index] as Map);
+      final quote = QuoteModel.fromMap(quoteMap);
 
-      final image = _getRandomImage(imageUrls);
+      // 1) usa a imagem da própria quote, se existir
+      // 2) se não existir, usa uma da lista geral de images
+      final resolvedImage = quote.imageUrl.isNotEmpty
+          ? quote.imageUrl
+          : _getImageForIndex(imageUrls, index);
 
       return quote.copyWith(
-        backgroundImage: image,
+        imageUrl: resolvedImage,
       );
-    }).toList();
+    });
   }
 
-  String _getRandomImage(List<String> images) {
+  String _extractImageUrl(dynamic item) {
+    if (item is! Map) return '';
+
+    final map = Map<String, dynamic>.from(item);
+
+    return (map['display_url'] ??
+        map['thumbnail_url'] ??
+        map['download_url'] ??
+        map['image_url'] ??
+        map['background_image'] ??
+        '')
+        .toString()
+        .trim();
+  }
+
+  String _getImageForIndex(List<String> images, int index) {
     if (images.isEmpty) return '';
-    return images[_random.nextInt(images.length)];
+    return images[index % images.length];
   }
 }
