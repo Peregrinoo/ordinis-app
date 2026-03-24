@@ -25,15 +25,18 @@ class DailyQuoteProvider extends ChangeNotifier {
   Future<void> loadAllQuotes() async {
     _isLoading = true;
     _error = null;
-    notifyListeners();
 
     try {
       _allQuotes = await service.loadQuotes();
-
+      print("Deus me ajude !!! ${allQuotes}");
       if (_allQuotes.isNotEmpty) {
         _selectedQuote = _allQuotes.first;
       }
-    } catch (e) {
+
+      notifyListeners();
+    } catch (e, s) {
+      debugPrint('Erro em loadAllQuotes: $e');
+      debugPrintStack(stackTrace: s);
       _error = 'Não foi possível carregar as citações.';
     } finally {
       _isLoading = false;
@@ -48,6 +51,7 @@ class DailyQuoteProvider extends ChangeNotifier {
     _selectedQuote = _allQuotes[index];
     notifyListeners();
   }
+
   //Os getters fofos.
   List<QuoteModel> get allQuotes => _allQuotes;
   QuoteModel? get selectedQuote => _selectedQuote;

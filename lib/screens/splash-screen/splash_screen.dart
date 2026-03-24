@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ordinis/providers/daily_quote_provider.dart';
+import 'package:ordinis/screens/quotes-screen/quotes_screen.dart';
 import 'package:provider/provider.dart';
 
 class SplashPage extends StatefulWidget {
@@ -20,7 +21,9 @@ class _SplashPageState extends State<SplashPage> {
   @override
   void initState() {
     super.initState();
-    _initializeApp();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _initializeApp();
+    });
   }
 
   Future<void> _initializeApp() async {
@@ -29,7 +32,7 @@ class _SplashPageState extends State<SplashPage> {
     await Future.delayed(const Duration(seconds: 3));
 
     if (!mounted) return;
-
+    Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => QuotesScreen()));
   }
 
   @override
