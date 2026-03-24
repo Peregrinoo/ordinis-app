@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:ordinis/widgets/quotes/quotes_card.dart';
 import 'package:provider/provider.dart';
 import 'package:ordinis/providers/daily_quote_provider.dart';
 
@@ -76,63 +77,11 @@ class _QuotesScreenState extends State<QuotesScreen> {
                         ),
                         child: Align(
                           alignment: Alignment.topCenter,
-                          child: Container(
-                            padding: const EdgeInsets.all(20),
-                            decoration: BoxDecoration(
-                              color: const Color(0xFFD2C8B8).withOpacity(0.78),
-                              borderRadius: BorderRadius.circular(24),
-                              border: Border.all(
-                                color: Colors.white.withOpacity(0.25),
-                                width: 1,
-                              ),
-                            ),
-                            child: Column(
-                              mainAxisSize: MainAxisSize.min,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  '“${quote.trecho}”',
-                                  style: const TextStyle(
-                                    fontSize: 28,
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.w500,
-                                  ),
-                                ),
-                                const SizedBox(height: 12),
-                                Text(
-                                  quote.livro,
-                                  style: const TextStyle(
-                                    fontSize: 18,
-                                    color: Colors.white70,
-                                    fontStyle: FontStyle.italic,
-                                  ),
-                                ),
-                                const SizedBox(height: 16),
-                                Text(
-                                  quote.explicacao,
-                                  style: const TextStyle(
-                                    fontSize: 20,
-                                    color: Colors.white,
-                                    height: 1.3,
-                                  ),
-                                ),
-                                const SizedBox(height: 18),
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.end,
-                                  children: [
-                                    _ActionCircleButton(
-                                      icon: Icons.share_outlined,
-                                      onTap: () {},
-                                    ),
-                                    const SizedBox(width: 12),
-                                    _ActionCircleButton(
-                                      icon: Icons.favorite_border,
-                                      onTap: () {},
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            ),
+                          child: QuoteCard(
+                            quote: quote,
+                            isFavorite: false,
+                            onShare: () {},
+                            onFavorite: () {},
                           ),
                         ),
                       );
@@ -204,36 +153,3 @@ class _BackgroundImage extends StatelessWidget {
   }
 }
 
-class _ActionCircleButton extends StatelessWidget {
-  final IconData icon;
-  final VoidCallback onTap;
-
-  const _ActionCircleButton({
-    required this.icon,
-    required this.onTap,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return InkWell(
-      onTap: onTap,
-      borderRadius: BorderRadius.circular(99),
-      child: Ink(
-        width: 42,
-        height: 42,
-        decoration: BoxDecoration(
-          color: Colors.white.withOpacity(0.18),
-          shape: BoxShape.circle,
-          border: Border.all(
-            color: Colors.white.withOpacity(0.25),
-          ),
-        ),
-        child: Icon(
-          icon,
-          color: Colors.white,
-          size: 22,
-        ),
-      ),
-    );
-  }
-}
