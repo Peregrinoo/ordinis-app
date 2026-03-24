@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(MaterialApp(
-    title: "Ordinis - Palavra todo dia",
-    home: Scaffold(),
-  ));
+  runApp(
+    MultiProvider(providers: [
+      ChangeNotifierProvider(create: (_) => DailyWordProvider())
+    ], child: const HomePage(),)
+  );
 }
