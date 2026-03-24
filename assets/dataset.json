@@ -1,0 +1,631 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-03-23T00:00:00-03:00",
+  "locale": "pt-BR",
+  "app": "Ordinis",
+  "quotes": [
+    {
+      "id": "q001",
+      "quote_text": "Tu nos fizeste para ti, e inquieto está o nosso coração enquanto não repousa em ti.",
+      "quote_text_original": "Fecisti nos ad te, et inquietum est cor nostrum, donec requiescat in te.",
+      "author": "Santo Agostinho",
+      "work_title": "Confessiones",
+      "reference": "I, 1, 1",
+      "translation_note": "Tradução própria (mais literal), a partir do latim.",
+      "confidence_level": "alta",
+      "source_url": "https://www.thelatinlibrary.com/augustine/conf1.shtml",
+      "suggested_display_text": "Inquieto está o nosso coração…",
+      "tags": [
+        "busca",
+        "Deus",
+        "inquietacao",
+        "oracao",
+        "interioridade"
+      ]
+    },
+    {
+      "id": "q002",
+      "quote_text": "Eu ainda não amava, mas já amava o próprio amar.",
+      "quote_text_original": "Nondum amabam, et amare amabam.",
+      "author": "Santo Agostinho",
+      "work_title": "Confessiones",
+      "reference": "III, 1, 1",
+      "translation_note": "Tradução própria (adaptada para fluência em pt-BR).",
+      "confidence_level": "alta",
+      "source_url": "https://www.thelatinlibrary.com/augustine/conf3.shtml",
+      "suggested_display_text": "Amava o próprio amar.",
+      "tags": [
+        "amor",
+        "desejo",
+        "conversao",
+        "juventude"
+      ]
+    },
+    {
+      "id": "q003",
+      "quote_text": "Tu, porém, eras mais íntimo que o meu íntimo e mais alto que o meu cume.",
+      "quote_text_original": "Tu autem eras interior intimo meo et superior summo meo.",
+      "author": "Santo Agostinho",
+      "work_title": "Confessiones",
+      "reference": "III, 6, 11",
+      "translation_note": "Tradução própria (quase literal).",
+      "confidence_level": "alta",
+      "source_url": "https://www.thelatinlibrary.com/augustine/conf3.shtml",
+      "suggested_display_text": "Mais íntimo que o meu íntimo…",
+      "tags": [
+        "Deus",
+        "interioridade",
+        "transcendencia",
+        "contemplacao"
+      ]
+    },
+    {
+      "id": "q004",
+      "quote_text": "Dá-me castidade e continência, mas não agora.",
+      "quote_text_original": "Da mihi castitatem et continentiam, sed noli modo.",
+      "author": "Santo Agostinho",
+      "work_title": "Confessiones",
+      "reference": "VIII, 7, 17",
+      "translation_note": "Tradução própria (literal).",
+      "confidence_level": "alta",
+      "source_url": "https://www.thelatinlibrary.com/augustine/conf8.shtml",
+      "suggested_display_text": "Mas não agora.",
+      "tags": [
+        "virtude",
+        "fraqueza",
+        "autodominio",
+        "conversao"
+      ]
+    },
+    {
+      "id": "q005",
+      "quote_text": "Toma e lê.",
+      "quote_text_original": "Tolle, lege.",
+      "author": "Santo Agostinho",
+      "work_title": "Confessiones",
+      "reference": "VIII, 12, 29",
+      "translation_note": "Tradução própria (literal).",
+      "confidence_level": "alta",
+      "source_url": "https://www.thelatinlibrary.com/augustine/conf8.shtml",
+      "suggested_display_text": "Toma e lê.",
+      "tags": [
+        "escritura",
+        "chamado",
+        "conversao",
+        "discernimento"
+      ]
+    },
+    {
+      "id": "q006",
+      "quote_text": "Tarde te amei, beleza tão antiga e tão nova, tarde te amei!",
+      "quote_text_original": "Sero te amavi, pulchritudo tam antiqua et tam nova, sero te amavi.",
+      "author": "Santo Agostinho",
+      "work_title": "Confessiones",
+      "reference": "X, 27, 38",
+      "translation_note": "Tradução própria (muito próxima da consagrada em português).",
+      "confidence_level": "alta",
+      "source_url": "https://www.thelatinlibrary.com/augustine/conf10.shtml",
+      "suggested_display_text": "Tarde te amei…",
+      "tags": [
+        "amor",
+        "conversao",
+        "beleza",
+        "arrependimento"
+      ]
+    },
+    {
+      "id": "q007",
+      "quote_text": "Aos teus olhos, tornei-me um enigma para mim mesmo; e esse é o meu sofrimento.",
+      "quote_text_original": "In cuius oculis mihi quaestio factus sum, et ipse est languor meus.",
+      "author": "Santo Agostinho",
+      "work_title": "Confessiones",
+      "reference": "X, 33, 50",
+      "translation_note": "Tradução própria (adaptada), preservando o sentido de 'languor' como aflição/ doença interior.",
+      "confidence_level": "alta",
+      "source_url": "https://www.thelatinlibrary.com/augustine/conf10.shtml",
+      "suggested_display_text": "Tornei-me um enigma…",
+      "tags": [
+        "autoconhecimento",
+        "humildade",
+        "oracao",
+        "verdade"
+      ]
+    },
+    {
+      "id": "q008",
+      "quote_text": "Dá o que ordenas e ordena o que quiseres.",
+      "quote_text_original": "Da quod iubes et iube quod vis.",
+      "author": "Santo Agostinho",
+      "work_title": "Confessiones",
+      "reference": "X, 29, 40",
+      "translation_note": "Tradução própria (literal).",
+      "confidence_level": "alta",
+      "source_url": "https://www.latin.it/autore/sant-agostino/confessiones/ liber-x/?lang=it",
+      "suggested_display_text": "Dá o que ordenas…",
+      "tags": [
+        "graca",
+        "vontade",
+        "oracao",
+        "dependencia_de_Deus"
+      ]
+    },
+    {
+      "id": "q009",
+      "quote_text": "Meu peso é meu amor; por ele sou levado para onde quer que eu vá.",
+      "quote_text_original": "Pondus meum amor meus; eo feror, quocumque feror.",
+      "author": "Santo Agostinho",
+      "work_title": "Confessiones",
+      "reference": "XIII, 9, 10",
+      "translation_note": "Tradução própria (literal).",
+      "confidence_level": "alta",
+      "source_url": "https://www.thelatinlibrary.com/augustine/conf13.shtml",
+      "suggested_display_text": "Meu peso é meu amor.",
+      "tags": [
+        "amor",
+        "desejo",
+        "ordem",
+        "vida_espiritual"
+      ]
+    },
+    {
+      "id": "q010",
+      "quote_text": "Retirada a justiça, o que são os reinos senão grandes roubos?",
+      "quote_text_original": "Remota itaque iustitia, quid sunt regna nisi magna latrocinia?",
+      "author": "Santo Agostinho",
+      "work_title": "De civitate Dei",
+      "reference": "IV, 4",
+      "translation_note": "Tradução própria (literal).",
+      "confidence_level": "alta",
+      "source_url": "https://www.thelatinlibrary.com/augustine/civ4.shtml",
+      "suggested_display_text": "Reinos sem justiça…",
+      "tags": [
+        "justica",
+        "politica",
+        "etica",
+        "sociedade"
+      ]
+    },
+    {
+      "id": "q011",
+      "quote_text": "Ainda que eu me engane, eu existo.",
+      "quote_text_original": "Si enim fallor, sum.",
+      "author": "Santo Agostinho",
+      "work_title": "De civitate Dei",
+      "reference": "XI, 26",
+      "translation_note": "Tradução própria (literal; formula concisa).",
+      "confidence_level": "alta",
+      "source_url": "https://www.thelatinlibrary.com/augustine/civ11.shtml",
+      "suggested_display_text": "Se me engano, existo.",
+      "tags": [
+        "verdade",
+        "filosofia",
+        "consciencia",
+        "certeza"
+      ]
+    },
+    {
+      "id": "q012",
+      "quote_text": "Dois amores fizeram duas cidades: a terrestre, pelo amor de si até o desprezo de Deus; a celeste, pelo amor de Deus até o desprezo de si.",
+      "quote_text_original": "Fecerunt itaque civitates duas amores duo, terrenam scilicet amor sui usque ad contemptum Dei, caelestem vero amor Dei usque ad contemptum sui.",
+      "author": "Santo Agostinho",
+      "work_title": "De civitate Dei",
+      "reference": "XIV, 28",
+      "translation_note": "Tradução própria (muito próxima do latim; frase longa).",
+      "confidence_level": "alta",
+      "source_url": "https://www.thelatinlibrary.com/augustine/civ14.shtml",
+      "suggested_display_text": "Dois amores, duas cidades.",
+      "tags": [
+        "amor",
+        "orgulho",
+        "humildade",
+        "cidade_de_Deus"
+      ]
+    },
+    {
+      "id": "q013",
+      "quote_text": "A paz de todas as coisas é a tranquilidade da ordem.",
+      "quote_text_original": "Pax omnium rerum tranquillitas ordinis.",
+      "author": "Santo Agostinho",
+      "work_title": "De civitate Dei",
+      "reference": "XIX, 13",
+      "translation_note": "Tradução própria (literal).",
+      "confidence_level": "alta",
+      "source_url": "https://www.thelatinlibrary.com/augustine/civ19.shtml",
+      "suggested_display_text": "Tranquilidade da ordem.",
+      "tags": [
+        "paz",
+        "ordem",
+        "sociedade",
+        "bem_comum"
+      ]
+    },
+    {
+      "id": "q014",
+      "quote_text": "Não saias para fora; volta a ti mesmo; no homem interior habita a verdade.",
+      "quote_text_original": "Noli foras ire; in te ipsum redi; in interiore homine habitat veritas.",
+      "author": "Santo Agostinho",
+      "work_title": "De vera religione",
+      "reference": "39, 72",
+      "translation_note": "Tradução própria (literal).",
+      "confidence_level": "alta",
+      "source_url": "https://www.augustinus.it/latino/vera_religione/ vera_religione_39.htm",
+      "suggested_display_text": "No homem interior…",
+      "tags": [
+        "verdade",
+        "interioridade",
+        "contemplacao",
+        "sabedoria"
+      ]
+    },
+    {
+      "id": "q015",
+      "quote_text": "Ama e faze o que quiseres.",
+      "quote_text_original": "Dilige, et quod vis fac.",
+      "author": "Santo Agostinho",
+      "work_title": "In epistulam Ioannis ad Parthos tractatus",
+      "reference": "VII, 8",
+      "translation_note": "Tradução própria (equivalente consagrado em português).",
+      "confidence_level": "alta",
+      "source_url": "https://www.augustinus.it/latino/ commento_epistola_giovanni/omelia_07_testo.htm",
+      "suggested_display_text": "Ama e faze…",
+      "tags": [
+        "amor",
+        "caridade",
+        "etica",
+        "liberdade"
+      ]
+    },
+    {
+      "id": "q016",
+      "quote_text": "Fé é crer no que ainda não vês; e a recompensa da fé é ver o que crês.",
+      "quote_text_original": "Est autem fides credere quod nondum vides, cuius fidei merces est videre quod credis.",
+      "author": "Santo Agostinho",
+      "work_title": "Sermo",
+      "reference": "43, 1",
+      "translation_note": "Tradução própria (quase literal).",
+      "confidence_level": "alta",
+      "source_url": "https://www.augustinus.it/latino/discorsi/ discorso_043_testo.htm",
+      "suggested_display_text": "Fé é crer…",
+      "tags": [
+        "fe",
+        "esperanca",
+        "visao",
+        "confianca"
+      ]
+    },
+    {
+      "id": "q017",
+      "quote_text": "Aquele que te criou sem ti não te justifica sem ti: crioute sem saberes, justifica-te querendo.",
+      "quote_text_original": "Qui ergo fecit te sine te, non te iustificat sine te. Ergo fecit nescientem, iustificat volentem.",
+      "author": "Santo Agostinho",
+      "work_title": "Sermo",
+      "reference": "169, 11, 13",
+      "translation_note": "Tradução própria (adaptada).",
+      "confidence_level": "alta",
+      "source_url": "https://www.augustinus.it/latino/discorsi/ discorso_169_testo.htm",
+      "suggested_display_text": "Não te justifica sem ti.",
+      "tags": [
+        "graca",
+        "liberdade",
+        "salvacao",
+        "responsabilidade"
+      ]
+    },
+    {
+      "id": "q018",
+      "quote_text": "Sede o que vedes e recebei o que sois.",
+      "quote_text_original": "Estote quod videtis, et accipite quod estis.",
+      "author": "Santo Agostinho",
+      "work_title": "Sermo",
+      "reference": "272",
+      "translation_note": "Tradução própria (literal).",
+      "confidence_level": "alta",
+      "source_url": "https://www.augustinus.it/latino/discorsi/ discorso_272_testo.htm",
+      "suggested_display_text": "Sede o que vedes…",
+      "tags": [
+        "eucaristia",
+        "igreja",
+        "comunhao",
+        "identidade"
+      ]
+    },
+    {
+      "id": "q019",
+      "quote_text": "Cantar é próprio de quem ama.",
+      "quote_text_original": "Cantare amantis est.",
+      "author": "Santo Agostinho",
+      "work_title": "Sermo",
+      "reference": "336, 1",
+      "translation_note": "Tradução própria (literal).",
+      "confidence_level": "alta",
+      "source_url": "https://www.augustinus.it/latino/discorsi/ discorso_336_testo.htm",
+      "suggested_display_text": "Cantar é de quem ama.",
+      "tags": [
+        "louvor",
+        "amor",
+        "oracao",
+        "alegria"
+      ]
+    },
+    {
+      "id": "q020",
+      "quote_text": "Por isso o mundo inteiro julga com segurança: não são bons os que se separam do mundo inteiro, em qualquer parte que estejam.",
+      "quote_text_original": "Quapropter securus judicat orbis terrarum, bonos non esse qui se dividunt ab orbe terrarum in quacumque parte terrarum.",
+      "author": "Santo Agostinho",
+      "work_title": "Contra epistolam Parmeniani",
+      "reference": "III, 4, 24",
+      "translation_note": "Tradução própria (adaptada). Ortografia 'judicat' conforme a fonte consultada.",
+      "confidence_level": "alta",
+      "source_url": "https://la.wikisource.org/wiki/Contra_epistolam_Parmeniani/ III",
+      "suggested_display_text": "O mundo julga com segurança…",
+      "tags": [
+        "unidade",
+        "igreja",
+        "cisma",
+        "comunhao"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "img001",
+      "title": "Sketch preparatório: Santo Agostinho no estúdio (Carpaccio)",
+      "description": "Desenho preparatório associado ao tema 'Agostinho em seu estúdio'.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ Preparatory_Sketch_for_Carpaccio%27s_St._Augustine_in_His_Study.jpg",
+      "thumbnail_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ Preparatory_Sketch_for_Carpaccio%27s_St._Augustine_in_His_Study.jpg?width=1080",
+      "resolution": "3960x2708",
+      "file_size": "3.02 MB",
+      "license": "Domínio público (PDM/PD-Art)",
+      "author/collection/museum": "Vittore Carpaccio (atr.) • Coleção: British Museum",
+      "suggested_usage_notes": "Bom para fundo com textura. Use overlay escuro 0.55–0.65 e recorte mantendo o centro do papel/desenho.",
+      "local_filename_suggestion": "bg_001_carpaccio_sketch.jpg"
+    },
+    {
+      "id": "img002",
+      "title": "Detalhe do ciclo: Vittore Carpaccio 026",
+      "description": "Imagem de apoio (detalhe) relacionada ao ciclo de 'Agostinho no estúdio'.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ Vittore_Carpaccio_026.jpg",
+      "thumbnail_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ Vittore_Carpaccio_026.jpg?width=1080",
+      "resolution": "3200x2143",
+      "file_size": "505 KB",
+      "license": "Domínio público (provável; confirmar na página do arquivo)",
+      "author/collection/museum": "Vittore Carpaccio • (categoria temática em Wikimedia Commons)",
+      "suggested_usage_notes": "Use como alternativa mais leve (arquivo pequeno). Ideal para telas com texto grande; aplique blur leve opcional.",
+      "local_filename_suggestion": "bg_002_carpaccio_detail_026.jpg"
+    },
+    {
+      "id": "img003",
+      "title": "Santo Agostinho em seu gabinete (Botticelli, Uffizi)",
+      "description": "Pintura de Botticelli com Agostinho escrevendo/ estudando.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ Sandro_Botticelli_-_St_Augustin_dans_son_cabinet_de_travail.jpg",
+      "thumbnail_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ Sandro_Botticelli_-_St_Augustin_dans_son_cabinet_de_travail.jpg?width=1080",
+      "resolution": "1763x2737",
+      "file_size": "1.71 MB",
+      "license": "Domínio público (PDM/PD-Art)",
+      "author/collection/museum": "Sandro Botticelli • Coleção: Uffizi (Florença)",
+      "suggested_usage_notes": "Recorte vertical mantendo rosto e a mesa. Overlay 0.50–0.60 para legibilidade sobre tons quentes.",
+      "local_filename_suggestion": "bg_003_botticelli_augustine_uffizi.jpg"
+    },
+    {
+      "id": "img004",
+      "title": "Santo Agostinho (Botticelli, Ognissanti)",
+      "description": "Versão associada ao conjunto Ognissanti de Botticelli sobre Agostinho.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ Sandro_Botticelli_-_Saint_Augustin.jpg",
+      "thumbnail_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ Sandro_Botticelli_-_Saint_Augustin.jpg?width=1080",
+      "resolution": "1775x2758",
+      "file_size": "1.39 MB",
+      "license": "Domínio público (provável; confirmar na página do arquivo)",
+      "author/collection/museum": "Sandro Botticelli • (conjunto Ognissanti)",
+      "suggested_usage_notes": "Boa para fundos verticais; mantenha o rosto em terços superiores. Overlay 0.55.",
+      "local_filename_suggestion": "bg_004_botticelli_ognissanti.jpg"
+    },
+    {
+      "id": "img005",
+      "title": "Santo Agostinho (Philippe de Champaigne, séc. XVII)",
+      "description": "Retrato devocional de Agostinho em estilo barroco francês.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ Champaigne%2C_Philippe_de_-_Saint_Augustin_-_1645-1650.jpg",
+      "thumbnail_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ Champaigne%2C_Philippe_de_-_Saint_Augustin_-_1645-1650.jpg?width=1080",
+      "resolution": "3135x3812",
+      "file_size": "1.62 MB",
+      "license": "Domínio público (PD-Art)",
+      "author/collection/museum": "Philippe de Champaigne • (obra do séc. XVII; ver página do arquivo para coleção)",
+      "suggested_usage_notes": "Imagem escura/solene: overlay menor (0.40–0.50) já basta. Recorte mantendo olhos e mãos.",
+      "local_filename_suggestion": "bg_005_champaigne_augustine.jpg"
+    },
+    {
+      "id": "img006",
+      "title": "Agostinho sacrificando (Mauritshuis / tradição flamenga)",
+      "description": "Cena narrativa associada a episódios da vida de Agostinho.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ Navolger_van_Rogier_van_der_Weyden__St_Augustine_Sacrificing_to_a_Manichaean_Idol_(%5E)_-_SK-A-2057__Mauritshuis.jpg",
+      "thumbnail_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ Navolger_van_Rogier_van_der_Weyden__St_Augustine_Sacrificing_to_a_Manichaean_Idol_(%5E)_-_SK-A-2057__Mauritshuis.jpg?width=1280",
+      "resolution": "4141x6000",
+      "file_size": "9.85 MB",
+      "license": "Domínio público (PD-Art)",
+      "author/collection/museum": "Aert van den Bossche • Coleção: Mauritshuis",
+      "suggested_usage_notes": "Use como background com blur 2–4px para evitar ruído. Overlay 0.60 recomendado (muitos elementos).",
+      "local_filename_suggestion": "bg_006_augustine_manichaeans_mauritshuis.jpg"
+    },
+    {
+      "id": "img007",
+      "title": "Cenas da vida de Santo Agostinho (The Met, painel)",
+      "description": "Painel com várias cenas (Master of the Legend of St. Augustine) em acervo de museu.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ Scenes_from_the_Life_of_Saint_Augustine_of_Hippo_MET_DT200613.jpg",
+      "thumbnail_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ Scenes_from_the_Life_of_Saint_Augustine_of_Hippo_MET_DT200613.jpg?width=1280",
+      "resolution": "3785x3459",
+      "file_size": "3.59 MB",
+      "license": "CC0 (indicado no contexto do acervo; confirme na página do arquivo)",
+      "author/collection/museum": "Master of Saint Augustine • Coleção: Metropolitan Museum of Art (Open Access)",
+      "suggested_usage_notes": "Ideal para tela de favoritos/coleção. Use overlay 0.65 e recorte em um único quadro/canto para foco.",
+      "local_filename_suggestion": "bg_007_met_life_of_augustine.jpg"
+    },
+    {
+      "id": "img008",
+      "title": "Vitral: Batismo de Agostinho por Ambrósio",
+      "description": "Vitral narrativo fotografado na Cathedral Basilica of St. Augustine (Flórida).",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ Cathedral_Basilica_of_St._Augustine_(St._Augustine,_Florida)__stained_glass,_Baptism_of_St._Augustine_by_St._Ambrose.jpg",
+      "thumbnail_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ Cathedral_Basilica_of_St._Augustine_(St._Augustine,_Florida)__stained_glass,_Baptism_of_St._Augustine_by_St._Ambrose.jpg?width=1280",
+      "resolution": "4578x3269",
+      "file_size": "16.84 MB",
+      "license": "CC BY-SA 4.0 (atribuição obrigatória)",
+      "author/collection/museum": "Fotografia: Nheyob • Local: Cathedral Basilica of St. Augustine",
+      "suggested_usage_notes": "Cores muito vivas: overlay 0.65–0.75 para o texto. Evite crop que corte figuras centrais.",
+      "local_filename_suggestion": "bg_008_vitral_batismo_agostinho.jpg"
+    },
+    {
+      "id": "img009",
+      "title": "Vitral: Ordenação de Santo Agostinho",
+      "description": "Cena devocional em vitral (mesma série/local).",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ Cathedral_Basilica_of_St._Augustine_(St._Augustine,_Florida)__stained_glass,_Ordination_of_St._Augustine.jpg",
+      "thumbnail_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ Cathedral_Basilica_of_St._Augustine_(St._Augustine,_Florida)__stained_glass,_Ordination_of_St._Augustine.jpg?width=1280",
+      "resolution": "2470x3461",
+      "file_size": "10.74 MB",
+      "license": "CC BY-SA 4.0 (atribuição obrigatória; confirme no arquivo)",
+      "author/collection/museum": "Fotografia: (ver página do arquivo) • Local: Cathedral Basilica of St. Augustine",
+      "suggested_usage_notes": "Recorte vertical funciona bem. Overlay 0.65.",
+      "local_filename_suggestion": "bg_009_vitral_ordenacao_agostinho.jpg"
+    },
+    {
+      "id": "img010",
+      "title": "Vitral: Agostinho lendo as Regras de sua Ordem",
+      "description": "Vitral adequado para telas de leitura/reflexão (mesma série/local).",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ Cathedral_Basilica_of_St._Augustine_(St._Augustine,_Florida)__stained_glass,_St._Augustine_Reading_the_Rules_of_His_Order.jpg",
+      "thumbnail_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ Cathedral_Basilica_of_St._Augustine_(St._Augustine,_Florida)__stained_glass,_St._Augustine_Reading_the_Rules_of_His_Order.jpg?width=1280",
+      "resolution": "2930x4109",
+      "file_size": "15.41 MB",
+      "license": "CC BY-SA 4.0 (atribuição obrigatória; confirme no arquivo)",
+      "author/collection/museum": "Fotografia: (ver página do arquivo) • Local: Cathedral Basilica of St. Augustine",
+      "suggested_usage_notes": "Excelente para tela de leitura: aplique overlay 0.70 e não corte o livro/mãos.",
+      "local_filename_suggestion": "bg_010_vitral_regras_ordem.jpg"
+    },
+    {
+      "id": "img011",
+      "title": "Vitral: Agostinho pregando",
+      "description": "Cena de pregação em vitral (mesma série/local).",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ Cathedral_Basilica_of_St._Augustine_(St._Augustine,_Florida)__stained_glass,_St._Augustine_Preaching.jpg",
+      "thumbnail_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ Cathedral_Basilica_of_St._Augustine_(St._Augustine,_Florida)__stained_glass,_St._Augustine_Preaching.jpg?width=1280",
+      "resolution": "2443x3429",
+      "file_size": "10.94 MB",
+      "license": "CC BY-SA 4.0 (atribuição obrigatória; confirme no arquivo)",
+      "author/collection/museum": "Fotografia: (ver página do arquivo) • Local: Cathedral Basilica of St. Augustine",
+      "suggested_usage_notes": "Boa para home com texto curto. Overlay 0.65– 0.70.",
+      "local_filename_suggestion": "bg_011_vitral_pregacao.jpg"
+    },
+    {
+      "id": "img012",
+      "title": "Vitral: Agostinho curando um enfermo",
+      "description": "Cena narrativa em vitral (mesma série/local).",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ Cathedral_Basilica_of_St._Augustine_(St._Augustine,_Florida)__stained_glass,_St._Augustine_Healing_a_Sick_Man.jpg",
+      "thumbnail_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ Cathedral_Basilica_of_St._Augustine_(St._Augustine,_Florida)__stained_glass,_St._Augustine_Healing_a_Sick_Man.jpg?width=1280",
+      "resolution": "2926x4103",
+      "file_size": "14.39 MB",
+      "license": "CC BY-SA 4.0 (atribuição obrigatória; confirme no arquivo)",
+      "author/collection/museum": "Fotografia: (ver página do arquivo) • Local: Cathedral Basilica of St. Augustine",
+      "suggested_usage_notes": "Cores fortes: overlay 0.70. Recorte central mantendo gesto de cura.",
+      "local_filename_suggestion": "bg_012_vitral_cura.jpg"
+    },
+    {
+      "id": "img013",
+      "title": "Vitral: Agostinho com Santa Mônica",
+      "description": "Cena de afeto/diálogo (mesma série/local).",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ Cathedral_Basilica_of_St._Augustine_(St._Augustine,_Florida)__stained_glass,_St._Augustine_with_St._Monica.jpg",
+      "thumbnail_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ Cathedral_Basilica_of_St._Augustine_(St._Augustine,_Florida)__stained_glass,_St._Augustine_with_St._Monica.jpg?width=1280",
+      "resolution": "2846x3560",
+      "file_size": "11.05 MB",
+      "license": "CC BY-SA 4.0 (atribuição obrigatória; confirme no arquivo)",
+      "author/collection/museum": "Fotografia: (ver página do arquivo) • Local: Cathedral Basilica of St. Augustine",
+      "suggested_usage_notes": "Bom para temas de família e conversão. Overlay 0.65.",
+      "local_filename_suggestion": "bg_013_vitral_monica.jpg"
+    },
+    {
+      "id": "img014",
+      "title": "Vitral: Agostinho & Alípio no jardim",
+      "description": "Cena ligada ao clima de conversão (mesma série/local).",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ Cathedral_Basilica_of_St._Augustine_(St._Augustine,_Florida)__stained_glass,_St._Augustine_%26_St._Alipius_in_the_Garden.jpg",
+      "thumbnail_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ Cathedral_Basilica_of_St._Augustine_(St._Augustine,_Florida)__stained_glass,_St._Augustine_%26_St._Alipius_in_the_Garden.jpg?width=1280",
+      "resolution": "2050x2881",
+      "file_size": "8.23 MB",
+      "license": "CC BY-SA 4.0 (atribuição obrigatória; confirme no arquivo)",
+      "author/collection/museum": "Fotografia: (ver página do arquivo) • Local: Cathedral Basilica of St. Augustine",
+      "suggested_usage_notes": "Ajuste de contraste ajuda na legibilidade. Overlay 0.70.",
+      "local_filename_suggestion": "bg_014_vitral_alipio_jardim.jpg"
+    },
+    {
+      "id": "img015",
+      "title": "Vitral: Agostinho e a criança na praia (símbolo catequético)",
+      "description": "Cena devocional popular (mesma série/local).",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ Cathedral_Basilica_of_St._Augustine_(St._Augustine,_Florida)__stained_glass,_St._Augustine_at_the_Seashore_Talking_to_a_Child.jpg",
+      "thumbnail_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ Cathedral_Basilica_of_St._Augustine_(St._Augustine,_Florida)__stained_glass,_St._Augustine_at_the_Seashore_Talking_to_a_Child.jpg? width=1280",
+      "resolution": "1969x2758",
+      "file_size": "7.54 MB",
+      "license": "CC BY-SA 4.0 (atribuição obrigatória; confirme no arquivo)",
+      "author/collection/museum": "Fotografia: (ver página do arquivo) • Local: Cathedral Basilica of St. Augustine",
+      "suggested_usage_notes": "Evite cortar a criança. Overlay 0.70.",
+      "local_filename_suggestion": "bg_015_vitral_crianca_praia.jpg"
+    },
+    {
+      "id": "img016",
+      "title": "Vitral (visão geral) – janela da igreja (St. Augustine, FL)",
+      "description": "Imagem ampla de vitral útil como textura de fundo.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ St._Augustine_Florida_Visit_2016_-_Church_Stained_Glass_Window.jpg",
+      "thumbnail_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ St._Augustine_Florida_Visit_2016_-_Church_Stained_Glass_Window.jpg?width=1280",
+      "resolution": "6000x4000",
+      "file_size": "6.82 MB",
+      "license": "CC BY-SA (verificar no arquivo)",
+      "author/collection/museum": "Fotografia: (ver página do arquivo) • Wikimedia Commons",
+      "suggested_usage_notes": "Ótimo para splash/fundo com blur. Use overlay 0.75 e blur 3–6px.",
+      "local_filename_suggestion": "bg_016_vitral_visao_geral.jpg"
+    },
+    {
+      "id": "img017",
+      "title": "A Anunciação (Fra Angelico)",
+      "description": "Fresco em alta resolução, tons suaves — excelente para backgrounds contemplativos.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ Fra_Angelico_-_Annunciation.jpg",
+      "thumbnail_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ Fra_Angelico_-_Annunciation.jpg?width=1280",
+      "resolution": "8646x6273",
+      "file_size": "32.92 MB",
+      "license": "Domínio público (PDM/PD-Art)",
+      "author/collection/museum": "Fra Angelico • Local: Museo di San Marco (Florença)",
+      "suggested_usage_notes": "Para home: recorte lateral esquerda para área 'vazia' com colunas; overlay 0.55.",
+      "local_filename_suggestion": "bg_017_fra_angelico_annunciation.jpg"
+    },
+    {
+      "id": "img018",
+      "title": "A Última Ceia (Leonardo da Vinci)",
+      "description": "Versão restaurada em alta resolução, ótima para fundos panorâmicos.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg",
+      "thumbnail_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg?width=1920",
+      "resolution": "9600x4800",
+      "file_size": "40.78 MB",
+      "license": "Domínio público (PDM/PD-Art)",
+      "author/collection/museum": "Leonardo da Vinci • Local: Santa Maria delle Grazie (Milão)",
+      "suggested_usage_notes": "Use como hero-background com crop 16:9; overlay 0.70 (muito detalhe).",
+      "local_filename_suggestion": "bg_018_last_supper_leonardo.jpg"
+    },
+    {
+      "id": "img019",
+      "title": "Ceia em Emaús (Caravaggio)",
+      "description": "Pintura barroca com forte chiaroscuro; excelente para estética escura e sofisticada.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ Caravaggio_%E2%80%94_Supper_at_Emmaus.jpg",
+      "thumbnail_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ Caravaggio_%E2%80%94_Supper_at_Emmaus.jpg?width=1280",
+      "resolution": "8267x6524",
+      "file_size": "43.02 MB",
+      "license": "Domínio público (PDM/PD-Art)",
+      "author/collection/museum": "Caravaggio • Coleção: Pinacoteca di Brera (Milão)",
+      "suggested_usage_notes": "Overlay 0.50–0.60. Recorte mantendo Cristo e a mesa; serve muito bem com tipografia dourada.",
+      "local_filename_suggestion": "bg_019_caravaggio_emmaus.jpg"
+    },
+    {
+      "id": "img020",
+      "title": "O Retorno do Filho Pródigo (Rembrandt)",
+      "description": "Cena de perdão e reconciliação; ideal para fundos em dias temáticos (perdão, misericórdia).",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ Rembrandt_Harmensz._van_Rijn_-_The_Return_of_the_Prodigal_Son.jpg",
+      "thumbnail_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ Rembrandt_Harmensz._van_Rijn_-_The_Return_of_the_Prodigal_Son.jpg?width=1280",
+      "resolution": "6347x8140",
+      "file_size": "35.95 MB",
+      "license": "Domínio público (PDM/PD-Art)",
+      "author/collection/museum": "Rembrandt • Coleção: Hermitage Museum (São Petersburgo)",
+      "suggested_usage_notes": "Recorte vertical focando no abraço. Overlay 0.55–0.65 conforme contraste.",
+      "local_filename_suggestion": "bg_020_rembrandt_prodigal_son.jpg"
+    }
+  ]
+}

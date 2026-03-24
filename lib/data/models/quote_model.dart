@@ -1,16 +1,22 @@
 class QuoteModel {
 
   //Definir elementos que vão compor esta classe
-   String _trecho = "";
-   String _livro = "";
-   String _explicacao = "";
+  final String trecho;
+  final String livro;
+  final String explicacao;
 
    //Construtor da classe
-   QuoteModel(this._trecho, this._livro, this._explicacao);
+   QuoteModel({
+     required this.trecho,
+     required this.livro,
+     required this.explicacao,
+   });
 
-  //Setters
-  String get trecho => _trecho;
-  String get livro => _livro;
-  String get explicacao => _explicacao;
-
+  factory QuoteModel.fromMap(Map<String, dynamic> map) {
+    return QuoteModel(
+      trecho: map['trecho'] ?? '',
+      livro: map['livro'] ?? '',
+      explicacao: map['explicacao'] ?? '',
+    );
+  }
 }
