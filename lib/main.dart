@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ordinis/providers/daily_quote_provider.dart';
 import 'package:ordinis/screens/splash-screen/splash_screen.dart';
+import 'package:ordinis/screens/quotes-screen/quotes_screen.dart';
+import 'package:ordinis/screens/favorites-screen/favorites_screen.dart';
 import 'package:ordinis/services/quote_service.dart';
 import 'package:provider/provider.dart';
 
@@ -34,6 +36,10 @@ class MinhaAplicacao extends StatelessWidget {
         scaffoldBackgroundColor: const Color(0xFFEBE5D2),
       ),
       home: const SplashPage(),
+      routes: {
+        '/quotes': (context) => const QuotesScreen(),
+        '/favorites': (context) => const FavoritesScreen(),
+      },
     );
   }
 }

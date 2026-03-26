@@ -3,6 +3,9 @@ import 'package:ordinis/widgets/quotes/quotes_card.dart';
 import 'package:provider/provider.dart';
 import 'package:ordinis/providers/daily_quote_provider.dart';
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:share_plus/share_plus.dart';
+
+import '../../data/models/quote_model.dart';
 
 class QuotesScreen extends StatefulWidget {
   const QuotesScreen({super.key});
@@ -37,6 +40,30 @@ class _QuotesScreenState extends State<QuotesScreen> {
     return index % length;
   }
 
+  void _shareQuote(QuoteModel quote) {
+    final shareText = StringBuffer();
+
+    // Adicionar a frase
+    shareText.writeln('"${quote.trecho}"');
+    shareText.writeln();
+
+    // Adicionar autor e referência
+    if (quote.author.isNotEmpty) {
+      shareText.write('— ${quote.author}');
+      if (quote.reference.isNotEmpty) {
+        shareText.write(', ${quote.reference}');
+      }
+      shareText.writeln();
+    } else if (quote.reference.isNotEmpty) {
+      shareText.writeln('— ${quote.reference}');
+    }
+
+    shareText.writeln();
+    shareText.write('Compartilhado via Ordinis');
+
+    Share.share(shareText.toString());
+  }
+
   @override
   Widget build(BuildContext context) {
     final provider = context.watch<DailyQuoteProvider>();
@@ -57,9 +84,7 @@ class _QuotesScreenState extends State<QuotesScreen> {
     final currentIndex = _realIndex(_currentPage, quotes.length);
     final currentQuote = quotes[currentIndex];
 
-    // Quando o provider estiver pronto, troque para:
-    // final isFavorite = provider.isFavorite(currentQuote.id);
-    final isFavorite = true;
+    final isFavorite = provider.isFavorite(currentQuote.id);
 
     return Scaffold(
       extendBody: true,
@@ -111,12 +136,10 @@ class _QuotesScreenState extends State<QuotesScreen> {
                       quote: quote,
                       isFavorite: pageIsFavorite,
                       onShare: () {
-                        print("Deus me ajude a implementar !");
+                        _shareQuote(quote);
                       },
                       onFavorite: () {
-                        // Exemplo real depois:
-                        // provider.toggleFavorite(quote);
-                        print("Favoritar quote");
+                        provider.toggleFavorite(quote);
                       },
                     ),
                   ),
