@@ -7,11 +7,15 @@ import 'package:ordinis/widgets/quotes/action_buttons.dart';
 class QuoteCard extends StatelessWidget {
   final QuoteModel quote;
   final VoidCallback onShare;
+  final VoidCallback onFavorite;
+  final bool isFavorite;
 
   const QuoteCard({
     super.key,
     required this.quote,
     required this.onShare,
+    required this.onFavorite,
+    required this.isFavorite,
   });
 
   @override
@@ -90,6 +94,13 @@ class QuoteCard extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
+                  ActionCircleButton(
+                    icon: isFavorite
+                        ? Icons.favorite
+                        : Icons.favorite_border,
+                    onTap: onFavorite,
+                  ),
+                  const SizedBox(width: 10),
                   ActionCircleButton(
                     icon: Icons.share_outlined,
                     onTap: onShare,

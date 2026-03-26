@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:ordinis/widgets/quotes/quotes_card.dart';
 import 'package:provider/provider.dart';
-import 'package:ordinis/data/models/quote_model.dart';
 import 'package:ordinis/providers/daily_quote_provider.dart';
 import 'package:cached_network_image/cached_network_image.dart';
-import 'dart:ui';
+import 'package:share_plus/share_plus.dart';
+
+import '../../data/models/quote_model.dart';
 
 class QuotesScreen extends StatefulWidget {
   const QuotesScreen({super.key});
@@ -39,6 +40,30 @@ class _QuotesScreenState extends State<QuotesScreen> {
     return index % length;
   }
 
+  void _shareQuote(QuoteModel quote) {
+    final shareText = StringBuffer();
+
+    // Adicionar a frase
+    shareText.writeln('"${quote.trecho}"');
+    shareText.writeln();
+
+    // Adicionar autor e referência
+    if (quote.author.isNotEmpty) {
+      shareText.write('— ${quote.author}');
+      if (quote.reference.isNotEmpty) {
+        shareText.write(', ${quote.reference}');
+      }
+      shareText.writeln();
+    } else if (quote.reference.isNotEmpty) {
+      shareText.writeln('— ${quote.reference}');
+    }
+
+    shareText.writeln();
+    shareText.write('Compartilhado via Ordinis');
+
+    Share.share(shareText.toString());
+  }
+
   @override
   Widget build(BuildContext context) {
     final provider = context.watch<DailyQuoteProvider>();
@@ -59,10 +84,20 @@ class _QuotesScreenState extends State<QuotesScreen> {
     final currentIndex = _realIndex(_currentPage, quotes.length);
     final currentQuote = quotes[currentIndex];
 
-   // final isFavorite = provider.isFavorite(currentQuote.id);
-    final isFavorite = true;
+    final isFavorite = provider.isFavorite(currentQuote.id);
+
     return Scaffold(
       extendBody: true,
+      floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: const Color(0xFFE8DFD1),
+        foregroundColor: const Color(0xFF3A2E24),
+        elevation: 6,
+        onPressed: () {
+          Navigator.pushNamed(context, '/favorites');
+        },
+        child: const Icon(Icons.favorite_outline),
+      ),
       body: Stack(
         children: [
           AnimatedSwitcher(
@@ -72,11 +107,9 @@ class _QuotesScreenState extends State<QuotesScreen> {
               imageUrl: currentQuote.backgroundImage,
             ),
           ),
-
           Container(
             color: Colors.black.withOpacity(0.28),
           ),
-
           SafeArea(
             child: PageView.builder(
               controller: _pageController,
@@ -87,6 +120,10 @@ class _QuotesScreenState extends State<QuotesScreen> {
               },
               itemBuilder: (context, index) {
                 final quote = quotes[_realIndex(index, quotes.length)];
+                final pageIsFavorite =
+                _realIndex(index, quotes.length) == currentIndex
+                    ? isFavorite
+                    : false;
 
                 return Padding(
                   padding: const EdgeInsets.symmetric(
@@ -97,9 +134,13 @@ class _QuotesScreenState extends State<QuotesScreen> {
                     alignment: Alignment.topCenter,
                     child: QuoteCard(
                       quote: quote,
+                      isFavorite: pageIsFavorite,
                       onShare: () {
-                        print("Deus me ajude a implementar !");
-                        },
+                        _shareQuote(quote);
+                      },
+                      onFavorite: () {
+                        provider.toggleFavorite(quote);
+                      },
                     ),
                   ),
                 );
@@ -107,17 +148,6 @@ class _QuotesScreenState extends State<QuotesScreen> {
             ),
           ),
         ],
-      ),
-
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
-      floatingActionButton: _FavoritesDock(
-        isFavorite: isFavorite,
-        onOpenFavorites: () {
-          Navigator.pushNamed(context, '/favorites');
-        },
-        onToggleFavorite: () {
-          print("Deus me ajude !!");
-        },
       ),
     );
   }
@@ -149,119 +179,6 @@ class _BackgroundImage extends StatelessWidget {
               size: 38,
             ),
           ),
-        ),
-      ),
-    );
-  }
-}
-
-class _FavoritesDock extends StatelessWidget {
-  final VoidCallback onOpenFavorites;
-  final VoidCallback onToggleFavorite;
-  final bool isFavorite;
-
-  const _FavoritesDock({
-    required this.onOpenFavorites,
-    required this.onToggleFavorite,
-    required this.isFavorite,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return ClipRRect(
-      borderRadius: BorderRadius.circular(26),
-      child: BackdropFilter(
-        filter: ImageFilter.blur(sigmaX: 12, sigmaY: 12),
-        child: Container(
-          padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
-          decoration: BoxDecoration(
-            color: const Color(0xFFE8DFD1).withOpacity(0.72),
-            borderRadius: BorderRadius.circular(26),
-            border: Border.all(
-              color: Colors.white.withOpacity(0.35),
-            ),
-            boxShadow: [
-              BoxShadow(
-                color: Colors.black.withOpacity(0.12),
-                blurRadius: 20,
-                offset: const Offset(0, 8),
-              ),
-            ],
-          ),
-          child: Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              _DockButton(
-                icon: Icons.collections_bookmark_outlined,
-                label: 'Salvas',
-                onTap: onOpenFavorites,
-              ),
-              const SizedBox(width: 10),
-              _DockButton(
-                icon: isFavorite ? Icons.favorite : Icons.favorite_border,
-                label: isFavorite ? 'Salvo' : 'Salvar',
-                onTap: onToggleFavorite,
-                isActive: isFavorite,
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class _DockButton extends StatelessWidget {
-  final IconData icon;
-  final String label;
-  final VoidCallback onTap;
-  final bool isActive;
-
-  const _DockButton({
-    required this.icon,
-    required this.label,
-    required this.onTap,
-    this.isActive = false,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final background = isActive
-        ? const Color(0xFFC8A96A).withOpacity(0.18)
-        : Colors.white.withOpacity(0.16);
-
-    final border = isActive
-        ? const Color(0xFFC8A96A).withOpacity(0.45)
-        : Colors.white.withOpacity(0.28);
-
-    final foreground = isActive
-        ? const Color(0xFF6E4F1F)
-        : const Color(0xFF3A2E24);
-
-    return InkWell(
-      onTap: onTap,
-      borderRadius: BorderRadius.circular(18),
-      child: Ink(
-        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
-        decoration: BoxDecoration(
-          color: background,
-          borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: border),
-        ),
-        child: Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Icon(icon, size: 20, color: foreground),
-            const SizedBox(width: 8),
-            Text(
-              label,
-              style: TextStyle(
-                color: foreground,
-                fontSize: 14,
-                fontWeight: FontWeight.w600,
-              ),
-            ),
-          ],
         ),
       ),
     );
