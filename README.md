@@ -1,6 +1,6 @@
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=D8C3A5&height=120&section=header"/>
 
-# Ordinis – Reflexões cristãs diárias para ordenar o amor 🤍
+# Ordinis – Reflexões diárias de Santo Agostinho
 
 <p align="center">
   <img alt="Flutter" src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
