@@ -3,9 +3,9 @@
 # Ordinis – Reflexões cristãs diárias para ordenar o amor 🤍
 
 <p align="center">
-  <img src="assets/readme/splash.png" width="220" alt="Splash screen do Ordinis" />
-  <img src="assets/readme/home.png" width="220" alt="Tela principal do Ordinis" />
-  <img src="assets/readme/favorites.png" width="220" alt="Tela de favoritos do Ordinis" />
+  <img src="assets/splash.jpeg" width="220" alt="Splash screen do Ordinis" />
+  <img src="assets/quotes.jpeg" width="220" alt="Tela principal do Ordinis" />
+  <img src="assets/favoritos.jpeg" width="220" alt="Tela de favoritos do Ordinis" />
 </p>
 
 <p align="center">
