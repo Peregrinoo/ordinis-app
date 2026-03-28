@@ -3,9 +3,16 @@
 # Ordinis – Reflexões cristãs diárias para ordenar o amor 🤍
 
 <p align="center">
-  <img src="assets/splash.jpeg" width="220" alt="Splash screen do Ordinis" />
-  <img src="assets/quotes.jpeg" width="220" alt="Tela principal do Ordinis" />
-  <img src="assets/favoritos.jpeg" width="220" alt="Tela de favoritos do Ordinis" />
+  <img alt="Flutter" src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
+  <img alt="Dart" src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" />
+  <img alt="Provider" src="https://img.shields.io/badge/State%20Management-Provider-8E7DBE?style=for-the-badge" />
+  <img alt="Platform" src="https://img.shields.io/badge/Platform-Android-lightgrey?style=for-the-badge" />
+</p>
+
+<p align="center">
+  <img src="assets/readme/splash.png" width="220" alt="Splash screen do Ordinis" />
+  <img src="assets/readme/home.png" width="220" alt="Tela principal do Ordinis" />
+  <img src="assets/readme/favorites.png" width="220" alt="Tela de favoritos do Ordinis" />
 </p>
 
 <p align="center">
@@ -18,44 +25,40 @@
 
 > Daily Christian reflections inspired by Saint Augustine, designed to help the soul return to what truly matters.
 
-### ✨ About the App
+### ✨ About
 
-**Ordinis** is a mobile application centered on daily Christian reflections, inspired by **Saint Augustine** and the pursuit of a life in communion with **Jesus Christ**.
+**Ordinis** is a mobile application focused on daily Christian reflections inspired by **Saint Augustine** and the pursuit of a life in communion with **Jesus Christ**.
 
-The app was designed to offer a daily pause for contemplation, helping the user cultivate:
-- interior silence
-- truth
-- ordered love
-- spiritual recollection
-- communion with God
+Its purpose is to provide a daily moment of pause, recollection, and spiritual contemplation through an experience that is both elegant and accessible.
 
-More than simply displaying quotes, Ordinis seeks to transform timeless spiritual wisdom into an accessible daily experience through a careful, elegant, and contemplative interface.
+More than a quote app, Ordinis was conceived as a devotional reading experience — one that helps the user revisit essential themes such as truth, interiority, ordered love, and communion with God.
 
 ---
 
 ### 🎯 Purpose
 
-The main purpose of Ordinis is to make Christian reflection something:
+Ordinis exists to make Christian reflection something:
+
 - beautiful
 - simple
+- contemplative
 - accessible
-- daily
 - meaningful
 
-In a distracted and accelerated world, the app invites the user to slow down and return to the essential.
+In a distracted and accelerated world, the app invites the user back to silence, spiritual recollection, and the essential.
 
 ---
 
-### 📱 Main Features
+### 📱 Features
 
-- Daily reflection system
-- Modern explanatory interpretation for each excerpt
+- Daily reflection experience
+- Modern interpretation layer for each excerpt
 - Favorites system
 - Reflection sharing
-- Offline-first experience
-- Elegant and contemplative UI
-- Support for local content loading
-- Expandable architecture for future features
+- Local content loading from JSON
+- Offline-first usage
+- Elegant reading-focused interface
+- Expandable structure for future devotional features
 
 ---
 
@@ -64,34 +67,35 @@ In a distracted and accelerated world, the app invites the user to slow down and
 - **Framework:** Flutter
 - **Language:** Dart
 - **State Management:** Provider
-- **Local Data:** JSON asset
-- **Storage:** SharedPreferences / local persistence
+- **Local Data Source:** JSON assets
+- **Persistence:** SharedPreferences
 - **Typography:** Google Fonts
-- **Architecture:** Modular and scalable, feature-oriented
+- **Architecture:** Feature-oriented and modular
 
 ---
 
-### 📦 Libraries and Tools
+### 📦 Main Packages
 
 - `provider`
 - `google_fonts`
 - `shared_preferences`
-- Native Flutter navigation
-- Local JSON loading
-- Custom UI components
+- Flutter native navigation
+- Local JSON parsing
+- Custom reusable widgets
 
 ---
 
-### 🎨 Design Principles
+### 🎨 Design
 
-Ordinis was designed with a visual identity that reflects:
+The visual identity of Ordinis was designed to communicate:
+
 - serenity
 - contemplation
 - sobriety
+- warmth
 - beauty
-- spiritual warmth
 
-The interface prioritizes soft tones, classical typography, generous spacing, and a reading-focused presentation.
+Soft tones, classical typography, generous spacing, and immersive imagery help transform reading into a quiet spiritual experience.
 
 ---
 
@@ -109,44 +113,40 @@ The interface prioritizes soft tones, classical typography, generous spacing, an
 
 > Reflexões cristãs diárias inspiradas em Santo Agostinho, pensadas para ajudar a alma a voltar ao essencial.
 
-### ✨ Sobre o App
+### ✨ Sobre
 
-**Ordinis** é um aplicativo mobile de reflexões cristãs diárias, inspirado em **Santo Agostinho** e na busca de uma vida em comunhão com **Jesus Cristo**.
+**Ordinis** é um aplicativo mobile de reflexões cristãs diárias inspirado em **Santo Agostinho** e na busca de uma vida em comunhão com **Jesus Cristo**.
 
-O app foi idealizado para oferecer um momento diário de pausa e contemplação, ajudando o usuário a cultivar:
-- silêncio interior
-- verdade
-- amor ordenado
-- recolhimento espiritual
-- comunhão com Deus
+Seu propósito é oferecer diariamente um momento de pausa, recolhimento e contemplação espiritual por meio de uma experiência bela, simples e acessível.
 
-Mais do que exibir frases, o Ordinis busca transformar sabedoria espiritual atemporal em uma experiência cotidiana acessível, bela e contemplativa.
+Mais do que um app de frases, o Ordinis foi concebido como uma experiência devocional de leitura — algo que ajuda o usuário a revisitar temas essenciais como verdade, interioridade, amor ordenado e comunhão com Deus.
 
 ---
 
 ### 🎯 Propósito
 
-O principal propósito do Ordinis é tornar a reflexão cristã algo:
+O Ordinis existe para tornar a reflexão cristã algo:
+
 - belo
 - simples
+- contemplativo
 - acessível
-- diário
 - significativo
 
-Em um mundo acelerado e disperso, o aplicativo convida o usuário a desacelerar e retornar ao essencial.
+Em um mundo acelerado e disperso, o aplicativo convida o usuário a retornar ao silêncio, ao recolhimento espiritual e ao essencial.
 
 ---
 
-### 📱 Funcionalidades Principais
+### 📱 Funcionalidades
 
-- Sistema de reflexão diária
-- Interpretação moderna de cada trecho
+- Experiência de reflexão diária
+- Camada de interpretação moderna para cada trecho
 - Sistema de favoritos
 - Compartilhamento de reflexões
-- Experiência offline-first
-- Interface elegante e contemplativa
-- Suporte a carregamento local de conteúdo
-- Arquitetura preparada para expansão futura
+- Carregamento local de conteúdo em JSON
+- Uso offline-first
+- Interface elegante com foco em leitura
+- Estrutura preparada para expansão futura
 
 ---
 
@@ -155,34 +155,35 @@ Em um mundo acelerado e disperso, o aplicativo convida o usuário a desacelerar 
 - **Framework:** Flutter
 - **Linguagem:** Dart
 - **Gerenciamento de Estado:** Provider
-- **Dados locais:** JSON em asset
-- **Persistência:** SharedPreferences / armazenamento local
+- **Fonte de Dados Local:** JSON em assets
+- **Persistência:** SharedPreferences
 - **Tipografia:** Google Fonts
-- **Arquitetura:** Modular e escalável, orientada a features
+- **Arquitetura:** Modular e orientada a features
 
 ---
 
-### 📦 Bibliotecas e Ferramentas
+### 📦 Principais Pacotes
 
 - `provider`
 - `google_fonts`
 - `shared_preferences`
 - Navegação nativa do Flutter
-- Leitura de JSON local
-- Componentização de UI customizada
+- Leitura e parsing de JSON local
+- Widgets reutilizáveis customizados
 
 ---
 
-### 🎨 Princípios de Design
+### 🎨 Design
 
-O Ordinis foi pensado com uma identidade visual que transmite:
+A identidade visual do Ordinis foi pensada para transmitir:
+
 - serenidade
 - contemplação
 - sobriedade
+- calor
 - beleza
-- calor espiritual
 
-A interface prioriza tons suaves, tipografia clássica, respiro visual e foco na leitura.
+Tons suaves, tipografia clássica, bom respiro visual e imagens imersivas ajudam a transformar a leitura em uma experiência espiritual mais silenciosa e profunda.
 
 ---
 
@@ -196,23 +197,16 @@ A interface prioriza tons suaves, tipografia clássica, respiro visual e foco na
 
 ---
 
-### 🚀 Possibilidades Futuras
+### 🗂️ Estrutura do Projeto
 
-- Notificações diárias
-- Categorias de reflexões
-- Busca por temas
-- Marcação por tags
-- Histórico de leituras
-- Sincronização em nuvem
-- Modo escuro
-- Compartilhamento visual com imagem gerada
-
----
-
-### 👤 Autor
-
-Desenvolvido por **Gabriel Chaves Ribeiro Pereira**.
-
-Se este projeto te interessou, fique à vontade para acompanhar sua evolução.
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=D8C3A5&height=120&section=footer"/>
+```bash
+lib/
+├── core/                 # Constantes, tema, utilitários
+├── data/
+│   ├── models/           # Modelos da aplicação
+│   ├── repositories/     # Camada de acesso aos dados
+│   └── services/         # Leitura de JSON, persistência local, etc.
+├── providers/            # Gerenciamento de estado com Provider
+├── screens/              # Telas da aplicação
+├── widgets/              # Componentes reutilizáveis
+└── main.dart             # Ponto de entrada
